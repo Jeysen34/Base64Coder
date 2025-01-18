@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/static/css/styles.css"
+    />
+    <title>Base64Coder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+  <div
+    class="container-fluid d-flex justify-content-center align-items-center text-center"
+  >
+    <a class="navbar-brand col-md-12 logoTxt" href="/">Base64Coder</a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarsExample01"
+      aria-controls="navbarsExample01"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </head>
+  <body>
+    
+
+<div class="container-body text-center">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-5">
+      <div class="form-control border-black">
+        <h1 class="text-center">Encode</h1>
+        <form method="POST" action="/encode">
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              id="floatingTextarea2"
+              style="height: 100px"
+              name="data"
+            ></textarea>
+            <label for="floatingTextarea2">Enter Text</label>
+          </div>
+          <div class="form-floating mb-3">
+            
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-outline-info my-3">
+              Encode
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="form-control border-black">
+        <h1 class="text-center">Decode</h1>
+        <form method="POST" action="/decode">
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              id="floatingTextarea2"
+              style="height: 100px"
+              name="data"
+            ></textarea>
+            <label for="floatingTextarea2">Base64</label>
+          </div>
+          <div class="form-floating mb-3">
+            
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-outline-info my-3">
+              Decode
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+  <footer class="bg-dark">
+    <ul class="nav justify-content-center pb-3 mb-3"></ul>
+    <p class="text-center text-white border-bottom">
+      © 2025 Base64Coder, All Rights Reserved
+    </p>
+  </footer>
+</html>

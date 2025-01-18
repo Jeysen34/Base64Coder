@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.logoTxt {
+  margin-left: 20px;
+}
+
+.encode-decode-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
